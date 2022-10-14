@@ -1,0 +1,221 @@
+  /* The font-family was used the example website was found on Google with reverse searching and linked to css file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* added space to right and left side since the example in the pdf has */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* smmoth scroll behavior added and "contact us"is linked to "Get to know us" in the footer to see the effect */
+body, html {
+  margin:0 1rem 0 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+/* used 'overflow' and 'white-space' to place menu bar next to each other to be seem a nav menu bar*/
+nav {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  font-size:16px;
+  border-radius: 4px;
+  font-weight:500;
+  padding: 0 4px 0 4rem;
+}
+/* to arrange menu bar next to each other used 'inline-block' also 'border-radius' for smooth edges */
+nav a {
+  display: inline-block;
+  color: #242724;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+#home {
+  color:#417BED;
+}
+#home:hover {
+  color:#ffffff;
+}
+/* 'hover used for making menu bar responsive '*/
+nav a:hover {
+  color:#ffffff;
+  background-color: #417BED;  
+}
+    
+.logo {
+  font-size:42px;
+  color:#212120;
+  font-weight:bolder;
+} 
+
+/* used transition for the logo*/ 
+.logo:hover {
+  width: 200px;
+  height: 100px;
+}
+
+.blue {
+  color:#417BED;
+}
+    
+.c {
+  display: inline-block;
+  text-align: center;
+  padding:0 4px 7px 4px;
+  line-height: 2rem;
+  background-color:#417BED;
+  color:#fff;
+  border-radius: 4px;
+}
+
+.phone {
+  align-content: center;
+  color:#fff;
+  background-color: #417BED;
+  border-radius: 3px;
+  padding: .7rem; 
+}
+  
+.head_title {
+  display:flex;
+  justify-content:space-around;
+  margin:7rem 0 7rem 5rem;
+  }
+
+.head-title-big {
+  color:#242724;
+  width:46.6rem;
+  font-size: 30px;
+  font-weight:bolder; 
+}
+    
+.head_paragraph {
+  width:33rem;
+  font-weight: lighter;
+  line-height: 1.6;
+  text-align: left;
+  color: #848C93;
+  font-size:18px;
+  padding-right:72px;
+}
+/*image was cropped due to placing it exactly same as in the example  */
+img {
+  filter: brightness(70%);
+  width: 1350px; 
+  height: 440px; 
+  object-fit: cover;
+  object-position: -90% 0%;  
+}
+/* 'position:absolute' used due to keep text on the image*/
+.image_note {
+  font-size: 28px;
+  line-height:1.6;
+  text-align: left;
+  font-weight: bolder;
+  color:#FFFFFF;
+  position:absolute;
+  top:36rem;
+  left:8rem;
+}
+
+.info {
+  text-align:left;
+  padding:4rem 1rem 4rem 3rem;
+  line-height:1.6;
+  font-size:15px;
+}
+
+.info_part1 {
+  margin-bottom:3rem;
+}
+
+.icons {
+  color:#417BED;
+  font-size:24px;
+  padding-top:5%;
+  cursor: pointer;
+  background-color: transparent;
+  animation-name: icons;
+  animation-duration: 3s; 
+}
+
+/* animation effect added */
+
+@keyframes icons {
+  from {font-size:24px;}
+  to {font-size:65px;}
+}
+/* transform effect added with hover */
+.icons i:hover {
+  transform: rotateX(180deg);
+}
+
+.heads {
+  font-weight:bold;
+  color:#474747;
+  cursor: pointer;
+}
+
+/* 'td' and 'th' tags were used to apply CSS to it since cells needs to be treated separately  */
+th, td {
+  padding:0 0rem .7rem 2rem;
+  text-align:justify;
+}
+
+.text { 
+  color:#747C84;
+}
+/* footer box was adjust and colored  */
+.footer-nav {
+  background-color:#417BED;
+  padding:4rem 0 3rem 5rem;
+  line-height:2;
+  color:#F9F8FC
+}    
+/* underline was removed with 'text-decoration' and colored  */
+a {
+  text-decoration:none; 
+  color:#9DBBE3
+}
+/*  background color and font color changed while hover    */
+a:hover, a:active, a:focus  { 
+  background-color:#fff;
+  color:#417BED;
+  border-radius: 5px;
+}
+    
+.column {
+  float: left;
+  width: 13.5rem;
+}
+    
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* list signes were removed */    
+ul {
+  list-style-type: none;
+}
+h4 {
+  padding-bottom:1rem;
+}
+/* linked to instagram.com */
+.social_link {
+  background-color: #FFF3CD;
+  border-radius: 4px;
+  width:22rem;
+  height:3rem;
+  text-align: center;
+}
+.social_link a{
+  color:#694F0E;
+  font-size: 14px;
+  text-decoration:none;
+}
+.social_link:hover {
+  background-color:#417BED;
+}
