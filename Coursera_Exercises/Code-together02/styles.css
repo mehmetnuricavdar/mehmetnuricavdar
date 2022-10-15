@@ -1,0 +1,54 @@
+body {
+  background-color: #b3b3b3;
+  font-size: 150%;
+  margin: 4%;
+}
+
+header {
+  background-color: rgb(102, 209, 209);
+  text-align: center;
+  padding: 1%;
+}
+
+h1 {
+  color: rgb(82, 82, 6);
+}
+
+nav {
+  background-color: rgb(102, 209, 209);
+  font-variant: small-caps;
+  font-size: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: rgb(133, 89, 35);
+  background-color: rgb(183, 229, 214);
+}
+
+section {
+  width: 40%;
+  display: inline-block;
+  float: left;
+  margin: 4%;
+}
+
+details {
+  font-style: italic;
+}
+
+summary {
+  font-style: normal;
+}
+
+footer {
+  background: #666;
+  clear: both;
+}
+
+img {
+  width: 100px;
+}
