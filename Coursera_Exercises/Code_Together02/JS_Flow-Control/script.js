@@ -1,25 +1,12 @@
-// console.log('Hello World!')
+console.log('Hello World!')
 
-// let name = prompt(" What is your name?")
+let name = prompt("What is your name?")
 
-// if (name.length != 0){
-//     console.log(`Hello ${name}`)
-// }
+if (name.length != 0){
+    console.log(`Hello ${name}`)
+}
 
-let grades = [
-  98,
-  76,
-  88,
-  74,
-  56,
-  90,
-  45,
-  60,
-  78,
-  40,
-  100,
-];
-
+let grades = [98, 76, 88, 74, 56, 90, 45, 60, 78, 40, 100];
 
 let sum = 0;
 
