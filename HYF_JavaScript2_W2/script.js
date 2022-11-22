@@ -71,25 +71,52 @@ function generateListings(numberOfListings) {
   return listings;
 }
 
-let newListforExercise = generateListings(37);
+const listings = generateListings(40);
+// created a button to implement listing
+const filter = {};
 
-//newListforExercise.forEach(i => console.log(i.size));
+function getOption(event) {
+  let selectType = document.querySelector("#type-filter").value;
+  let selectFacility = document.querySelector("#facilities-filter").value;
+  document.querySelector(
+    ".output"
+  ).textContent = `Type is ${selectType} and facility is ${selectFacility}`;
 
-let newListforExercisePrices = newListforExercise
+  filter.type = selectType;
+  filter.facilities = selectFacility;
+  let filteredListings = listings.filter(
+    (i) =>
+      i.type.includes(filter.type) && i.facilities.includes(filter.facilities)
+  );
+  const listArea = document.createElement("div");
+  document.body.append(listArea);
+  filteredListings.forEach((i) => {
+    const listItems = document.createElement("p");
+    listArea.appendChild(listItems);
+    listItemsData = document.createElement("td");
+    listItems.innerHTML = `<img src="${i.img}" max-width ="50px"><br>Type : ${i.type}<br>Facilities : ${i.facilities}<br>Price: ${i.price}<br>Has Garden: ${i.hasGarden}<br>Size : ${i.size}`;
+  });
+  const clearButton = document.createElement("button");
+  listArea.appendChild(clearButton);
+  clearButton.innerText = "Clear";
+  clearButton.addEventListener("click", function () {
+    document.body.removeChild(listArea);
+  });
+}
+
+//listings.forEach(i => console.log(i.size));
+
+let newListforExercisePrices = listings
   .filter((i) => i.price > 6000)
   .map((i) => i.price);
-console.log(newListforExercisePrices);
 
-let cheapListing = newListforExercise.filter((i) => i.price < 6000);
-console.log(cheapListing);
+let cheapListing = listings.filter((i) => i.price < 6000);
 
-let expensiveList = newListforExercise.filter((i) => i.price > 6000);
-console.log(expensiveList);
+let expensiveList = listings.filter((i) => i.price > 6000);
 
-let haveParking = newListforExercise.filter((i) =>
-  i.facilities.includes("Parkering")
+let haveParking = listings.filter((i) =>
+  i.facilities.includes(filter.facilities)
 );
-console.log(haveParking);
 //### Filter listings
 
 let findType = (listName, typeName) => {
@@ -102,11 +129,11 @@ let findTypeWithPrice = (listName, typeName, priceLimit) => {
   let newListWithPrice = findType(listName, typeName).filter(
     (i) => i.price < priceLimit
   );
-  console.log(newListWithPrice);
-
   return newListWithPrice;
 };
 
-findTypeWithPrice(newListforExercise, "House", 6000);
+findTypeWithPrice(listings, "House", 6000);
 
+//const filterListings = (newListforExercise, filter)
 
+// const farmListings = filterListings(newListforExercise, filter);

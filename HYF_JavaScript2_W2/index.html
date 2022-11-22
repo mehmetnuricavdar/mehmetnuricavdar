@@ -10,17 +10,17 @@
   <body>
     <h1>JavaScript2 Week2 Exercises</h1>
 
-    <form id="filterFormn">
+    <form id="filterForm">
       <label for="type-filter">Filter the listing below by type</label>
       <select name="type filter" id="type-filter">
         <option value="House">House</option>
         <option value="Farm">Farm</option>
         <option value="Dorm">Dorm</option>
         <option value="Shed">Shed</option>
-        <option value="Apartment">"Apartment"</option>
+        <option value="Apartment">Apartment</option>
       </select>
       <label for="facilities-filter"
-        >Filter the listing below by facilities</label
+        >Filter the listing below by facilities </label
       ><select name="facilities filter" id="facilities-filter">
       <option value="Elevator">Elevator</option>
       <option value="Husdyr">Husdyr</option>
@@ -30,5 +30,9 @@
       </select>
       <label for=""></label>
     </form>
+     <button onclick="getOption()"> Check Listings </button>
+     <p> The value of the option selected is: 
+        <span class="output"></span>
+    </p>
   </body>
 </html>
