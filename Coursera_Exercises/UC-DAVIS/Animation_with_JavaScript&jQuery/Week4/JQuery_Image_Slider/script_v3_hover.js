@@ -31,8 +31,7 @@ $(window).on("load", () => {
     }
   };
 
-    let mySlider = setInterval(slider, 2000);
-
+  let mySlider = setInterval(slider, 2000);
 
   document.querySelector("#slider").addEventListener("mouseover", () => {
     clearInterval(mySlider);
