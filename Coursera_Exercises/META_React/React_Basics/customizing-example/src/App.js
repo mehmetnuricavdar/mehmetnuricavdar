@@ -8,9 +8,9 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div id="root">
-      <Nav />
+      <Nav name='Mehmet' color='blue'/>
       <Promo />
-      <Intro1 />
+      <Intro1 title='React'/>
       <Intro2 />
       <Intro3 />
       <Footer />
