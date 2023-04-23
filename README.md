@@ -16,8 +16,8 @@
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png" alt="VS Code" height="40" style="vertical-align:top; margin:4px">
 </p>
 ## GitHub Stats:
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shobanamg)
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=shobanamg&show_icons=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mehmetnuricavdar)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=mehmetnuricavdar&show_icons=true)
 <!---
 mehmetnuricavdar/mehmetnuricavdar is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
