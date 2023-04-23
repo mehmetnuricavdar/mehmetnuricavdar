@@ -9,10 +9,6 @@
 
 - 👀 I’m interested in new technologies, AI, coding and science.
 
-- 🌱 I’m currently learning JavaScritp at Hack Your Future Denmark
-
-- 💞️ I’m looking to collaborate on open source JavaScript projects.
-
 - 📫 How to reach me mehmetnuricavdar@gmail.com
 
 <h3 align="left">Connect with me:</h3>
